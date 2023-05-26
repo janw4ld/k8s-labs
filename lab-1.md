@@ -38,7 +38,7 @@ Pod definition: [nginx-pod.yml](./scripts/lab-1/nginx-pod.yml)
 
 Execution and status check:
 
-```bash
+```console
 $ kubectl apply -f scripts/lab-1/nginx-pod.yml &&
 > sleep 5 && kubectl get pods nginx-pod
 pod/nginx-pod created
@@ -55,7 +55,7 @@ Pod definition: [nginx-pod_2.yml](./scripts/lab-1/nginx-pod_2.yml)
 
 Execution and status check:
 
-```bash
+```console
 $ kubectl apply -f scripts/lab-1/nginx-pod_2.yml &&
 > sleep 5 && kubectl get pods nginx-pod
 pod/nginx-pod configured
