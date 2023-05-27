@@ -169,7 +169,8 @@ Four.
 $ kubectl get pods -A -o custom-columns=\
 > NAME:.metadata.name,\
 > CONTROLLER:.metadata.ownerReferences[].kind,\
-> NAMESPACE:.metadata.namespace,NODE:.spec.nodeName\
+> NAMESPACE:.metadata.namespace,\
+> NODE:.spec.nodeName\
 > | grep Node
 etcd-minikube                      Node         kube-system   minikube
 kube-apiserver-minikube            Node         kube-system   minikube
